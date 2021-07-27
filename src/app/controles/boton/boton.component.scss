@@ -1,0 +1,10 @@
+.boton{
+    border-radius: 10px;
+    border: 1px solid blue;
+    min-width: 100px;
+    min-height: 30px;
+
+    &:hover{
+        box-shadow: 0 0 15px lightblue;
+    }
+}

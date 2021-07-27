@@ -1,0 +1,20 @@
+<div>
+    <label for="tarea-titulo">
+        <strong>Titulo</strong>
+        <input id="tarea-titulo" type="text" [(ngModel)]="texto"/>
+    </label>
+    <br>
+    <label for="tarea-descripcion">
+        <strong>Descripcion</strong>
+        <input id="tarea-descripcion" type="text" [(ngModel)]="descripcion"/>
+    </label>
+    <br>
+    <label for="tarea-estado">
+        <strong>Estado</strong>
+        <select [(ngModel)]="estado">
+            <option value="finalizada">Realizada</option>
+            <option value="ejecucion">En Ejecución</option>
+            <option value="pendiente">Sin Iniciar</option>
+        </select>
+    </label>
+</div>

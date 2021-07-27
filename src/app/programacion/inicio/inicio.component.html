@@ -1,0 +1,29 @@
+<div class="contendor">
+    <h1>
+        TAREAS
+    </h1>
+</div>
+<div class="contendor">
+<app-boton (onClick)="Onclick()">
+    <strong>AGREGAR</strong>
+</app-boton>
+</div>
+<div class="contendor">
+    <div class="seccion">
+        <app-panel padding="narrow">
+            <div style="margin-top: 25px;" *ngFor="let tarea of tareas">
+                <app-bullet 
+                [displayText]="tarea.texto" 
+                [Estado]="tarea.estado"
+                (onClick)="setSeleccionarTarea(tarea)"
+                ></app-bullet>
+            </div>
+        </app-panel>
+    </div>
+    <div class="seccion">
+        <app-panel padding="narrow">
+           <app-tareas-editor [tarea]="seleccionarTarea"></app-tareas-editor>
+        </app-panel>
+    </div>
+</div>
+
